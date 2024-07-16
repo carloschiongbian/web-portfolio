@@ -94,7 +94,7 @@ const Projects = () => {
       >
         <TechnologyTabs
           tabContainerStyles={{ width: "fit-content" }}
-          technologies={data?.technologies as string[]}
+          technologies={data?.technologies}
         />
 
         <Row wrap={false} style={{ columnGap: "10px" }}>

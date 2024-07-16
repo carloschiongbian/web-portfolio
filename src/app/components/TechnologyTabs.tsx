@@ -3,7 +3,7 @@ import { CSSProperties } from "react";
 
 interface Props {
   tabContainerStyles?: CSSProperties;
-  technologies: string[];
+  technologies: string[] | undefined;
 }
 
 const TechnologyTabs = ({ technologies, tabContainerStyles }: Props) => {
@@ -17,7 +17,7 @@ const TechnologyTabs = ({ technologies, tabContainerStyles }: Props) => {
   };
   return (
     <Row style={{ width: "100%", rowGap: "5px", ...tabContainerStyles }}>
-      {technologies.map((tech: string, index: number) => (
+      {technologies?.map((tech: string, index: number) => (
         <Col key={index}>
           <Tag color={tagColors[tech.toLowerCase()] ?? "orange"}>{tech}</Tag>
         </Col>
