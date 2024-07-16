@@ -2,7 +2,7 @@
 
 import { LinkedinOutlined, MailOutlined } from "@ant-design/icons";
 import { Avatar, Col, Divider, Row, Switch, Timeline, Typography } from "antd";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import EducationTabs from "@/app/components/EducationTabs";
 import ProjectCard from "@/app/components/ProjectCard";
@@ -11,7 +11,6 @@ import { experience, institutions, projects } from "./data";
 const { Title, Text } = Typography;
 
 const Home = () => {
-  // const [loaded, setLoaded] = useState<boolean>(false);
   const [showProjects, setShowProjects] = useState<boolean>(true);
   const [showEducation, setShowEducation] = useState<boolean>(true);
   const [showExperience, setShowExperience] = useState<boolean>(true);
@@ -83,9 +82,9 @@ const Home = () => {
             <Text className="sub-header-content">
               A software engineer with 3 years of creating interactive software
               in the frontend, backend, and database side of things 🎉 Helping
-              people out with their software needs is something I enjoy. I'm
-              all-in for a path of lifelong learning, and helping people move
-              forward one code at a time.
+              people out with their software needs is something I enjoy. I have
+              prepared myself for a path of lifelong learning, and helping
+              people move forward one code at a time.
             </Text>
           </Row>
 
