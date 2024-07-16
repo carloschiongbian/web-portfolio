@@ -11,10 +11,7 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   const route = useRouter();
-  const menuItems = [
-    { key: "Home", label: "Home", route: "./home" },
-    { key: "Projects", label: "Projects", route: "./projects" },
-  ];
+  const menuItems = [{ key: "Home", label: "Home", route: "home" }];
   return (
     <>
       <div className="navbar-container">
@@ -24,7 +21,7 @@ export default function MainLayout({
               level={5}
               key={index}
               style={{ color: "white", margin: 0, cursor: "pointer" }}
-              onClick={() => route.push(item.route)}
+              onClick={() => route.push(`../../pages/${item.route}`)}
             >
               {item.label}
             </Title>
