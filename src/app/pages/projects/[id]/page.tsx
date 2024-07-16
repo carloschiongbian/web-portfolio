@@ -34,104 +34,97 @@ const Projects = () => {
     const response = PROJECT_DATA[`${projectId}`];
 
     setData(response);
-    console.log("response: ", response);
     setDemoLink(response ? response.link : undefined);
     setRepositoryLink(response ? response.repository : undefined);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    data && (
-      <Col>
-        <Title level={1}>{data.title}</Title>
+    <Col>
+      <Title level={1}>{data?.title}</Title>
 
-        {data.video && (
-          <Carousel
-            style={{
-              display: "flex",
-              borderRadius: "10px",
-              flexDirection: "row",
-              backgroundColor: "black",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div>
-              <Image
-                className="project-image"
-                src={data.thumbnailPath}
-                alt="thumbnail"
-                width={1200}
-                height={450}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-            </div>
-            <div>
-              <video width="100%" height="100%" controls preload="none">
-                <source src={"/web-chat-demo.mov"} type="video/mp4" />
-                <track
-                  src={"/web-chat-demo.mov"}
-                  srcLang="en"
-                  label="English"
-                />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </Carousel>
-        )}
-
-        {data.video === null && (
-          <Image
-            className="project-image"
-            src={data.thumbnailPath}
-            alt="thumbnail"
-            width={1200}
-            height={450}
-            style={{ width: "100%", objectFit: "cover" }}
-          />
-        )}
-        <Row
-          wrap={false}
+      {data?.video && (
+        <Carousel
           style={{
-            marginTop: "10px",
+            display: "flex",
+            borderRadius: "10px",
+            flexDirection: "row",
+            backgroundColor: "black",
             alignItems: "center",
-            justifyContent: "space-between",
+            justifyContent: "center",
           }}
         >
-          <TechnologyTabs
-            tabContainerStyles={{ width: "fit-content" }}
-            technologies={data.technologies}
-          />
+          <div>
+            <Image
+              className="project-image"
+              src={data?.thumbnailPath}
+              alt="thumbnail"
+              width={1200}
+              height={450}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </div>
+          <div>
+            <video width="100%" height="100%" controls preload="none">
+              <source src={"/web-chat-demo.mov"} type="video/mp4" />
+              <track src={"/web-chat-demo.mov"} srcLang="en" label="English" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </Carousel>
+      )}
 
-          <Row wrap={false} style={{ columnGap: "10px" }}>
-            {repositoryLink && (
-              <Button
-                onClick={() => window?.open(repositoryLink, "_blank")?.focus()}
-              >
-                Repository
-              </Button>
-            )}
-            {demoLink && (
-              <Button onClick={() => window?.open(demoLink, "_blank")?.focus()}>
-                Demo
-              </Button>
-            )}
-          </Row>
+      {data?.video === null && (
+        <Image
+          className="project-image"
+          src={data?.thumbnailPath}
+          alt="thumbnail"
+          width={1200}
+          height={450}
+          style={{ width: "100%", objectFit: "cover" }}
+        />
+      )}
+      <Row
+        wrap={false}
+        style={{
+          marginTop: "10px",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <TechnologyTabs
+          tabContainerStyles={{ width: "fit-content" }}
+          technologies={data?.technologies as string[]}
+        />
+
+        <Row wrap={false} style={{ columnGap: "10px" }}>
+          {repositoryLink && (
+            <Button
+              onClick={() => window?.open(repositoryLink, "_blank")?.focus()}
+            >
+              Repository
+            </Button>
+          )}
+          {demoLink && (
+            <Button onClick={() => window?.open(demoLink, "_blank")?.focus()}>
+              Demo
+            </Button>
+          )}
         </Row>
-        <Row>
-          <Paragraph
-            style={{
-              marginTop: "20px",
-              textIndent: "50px",
-              textAlign: "justify",
-              fontSize: "16px",
-            }}
-          >
-            {data.content}
-          </Paragraph>
-        </Row>
-      </Col>
-    )
+      </Row>
+      <Row>
+        <Paragraph
+          style={{
+            marginTop: "20px",
+            textIndent: "50px",
+            textAlign: "justify",
+            fontSize: "16px",
+          }}
+        >
+          {data?.content}
+        </Paragraph>
+      </Row>
+    </Col>
   );
 };
 

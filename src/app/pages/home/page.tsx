@@ -73,9 +73,7 @@ const Home = () => {
         >
           {/* Header Content */}
           <Title className="developer-name">Julian Chiongbian</Title>
-          <Title level={3}>
-            Frontend Engineer (but basically a full-stack these days)
-          </Title>
+          <Title level={3}>Software Engineer</Title>
 
           {/* Sub-Header Content */}
           <Row className="sub-header">
