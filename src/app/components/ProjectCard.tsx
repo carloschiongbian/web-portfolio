@@ -1,8 +1,11 @@
 import { Card, Col, Row, Tag } from "antd";
 import Title from "antd/es/typography/Title";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import TechnologyTabs from "./TechnologyTabs";
 
 interface Project {
+  id: number;
   title: string;
   thumbnailPath: string;
   link: string;
@@ -14,58 +17,39 @@ interface Props {
 }
 
 const ProjectCard = ({ projects }: Props) => {
-  const tagColors: any = {
-    javascript: "volcano",
-    react: "magenta",
-    scss: "blue",
-    html: "green",
-    typescript: "red",
-    css: "pink",
-  };
+  const route = useRouter();
+
   return (
-    <Row style={{ columnGap: "50px" }}>
+    <Row
+      style={{ columnGap: "40px", rowGap: "30px", justifyContent: "center" }}
+    >
       {projects.map((project: Project, index: number) => (
         <Row key={index} style={{ width: "300px" }}>
           <Card
             hoverable
             style={{ width: "300px", height: "300px" }}
-            onClick={() => window?.open(project.link, "_blank")?.focus()}
+            onClick={() => {
+              console.log(project.id);
+              console.log(project.link);
+              route.push(project.link ? `${project.link}/${project.id}` : "#");
+            }}
           >
-            <div
-              className="project-thumbnail"
-              style={{
-                width: "100%",
-                paddingTop: "100%",
-                position: "relative",
-              }}
-            >
+            <div className="project-thumbnail">
               <Image
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                }}
-                className="avatar-pic"
+                src={project.thumbnailPath}
+                className="thumbnail-pic"
                 alt="project-pic"
                 width={150}
                 height={150}
-                src={project.thumbnailPath}
+                unoptimized={true}
               />
             </div>
           </Card>
-          <Title level={4}>{project.title}</Title>
-          <Row style={{ width: "100%", rowGap: "5px" }}>
-            {project.technologies.map((tech: string, index: number) => (
-              <Col key={index}>
-                <Tag color={tagColors[tech.toLowerCase()] ?? "orange"}>
-                  {tech}
-                </Tag>
-              </Col>
-            ))}
-          </Row>
+          <Title style={{ marginTop: 10 }} level={4}>
+            {project.title}
+          </Title>
+
+          <TechnologyTabs technologies={project.technologies} />
         </Row>
       ))}
     </Row>
