@@ -1,5 +1,6 @@
 import { Card, Col, Row, Tag } from "antd";
 import Title from "antd/es/typography/Title";
+import Image from "next/image";
 
 interface Project {
   title: string;
@@ -38,7 +39,7 @@ const ProjectCard = ({ projects }: Props) => {
                 position: "relative",
               }}
             >
-              <img
+              <Image
                 style={{
                   width: "100%",
                   height: "100%",
@@ -47,6 +48,10 @@ const ProjectCard = ({ projects }: Props) => {
                   top: 0,
                   left: 0,
                 }}
+                className="avatar-pic"
+                alt="project-pic"
+                width={150}
+                height={150}
                 src={project.thumbnailPath}
               />
             </div>
