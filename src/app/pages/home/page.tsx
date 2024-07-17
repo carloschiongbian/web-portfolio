@@ -90,6 +90,7 @@ const Home = () => {
       {/* Header */}
       {/* Header Content */}
       <Row
+        className="name-details"
         style={{
           justifyContent: "space-between",
           alignItems: "center",
@@ -123,7 +124,7 @@ const Home = () => {
         >
           {/* Sub-Header Content */}
           <Row className="sub-header">
-            <Avatar className="avatar-mobile" size={100}>
+            <Avatar className="avatar-mobile" size={150}>
               <Image
                 src={"/avatar-photo.jpeg"}
                 className="avatar-pic-mobile"
