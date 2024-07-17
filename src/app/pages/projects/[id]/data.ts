@@ -38,7 +38,7 @@ export const PROJECT_DATA: any = {
       "HTML",
     ],
     content:
-      "This was a project where I was the only one involved in both the development for the web application, and the mobile application. \
+      "This was a project for a specific client where I was the only one involved in both the development for the web application, and the mobile application. \
       It serves as a medium between patients and doctors, and it sends vital data regarding a pregnant patient's health such as \
       blood pressure, weight, glucose levels, daily calorie intakes, and many more.\
       I was able to handle the development of features with little-to-no supervision, and \
