@@ -40,7 +40,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <Col>
+    <>
       <Title level={1}>{data?.title}</Title>
 
       {data?.video && (
@@ -86,11 +86,13 @@ const Projects = () => {
         />
       )}
       <Row
-        wrap={false}
+        // wrap={false}
         style={{
+          width: "100%",
           marginTop: "10px",
           alignItems: "center",
           justifyContent: "space-between",
+          rowGap: "20px",
         }}
       >
         <TechnologyTabs
@@ -98,7 +100,11 @@ const Projects = () => {
           technologies={data?.technologies}
         />
 
-        <Row wrap={false} style={{ columnGap: "10px" }}>
+        <Row
+          className="link-buttons-web"
+          wrap={false}
+          style={{ columnGap: "10px" }}
+        >
           {repositoryLink && (
             <Button
               onClick={() => window?.open(repositoryLink, "_blank")?.focus()}
@@ -116,8 +122,9 @@ const Projects = () => {
       <Row>
         <Paragraph
           style={{
+            width: "100%",
             marginTop: "20px",
-            textIndent: "50px",
+            // textIndent: "50px",
             textAlign: "justify",
             fontSize: "16px",
           }}
@@ -125,7 +132,7 @@ const Projects = () => {
           {data?.content}
         </Paragraph>
       </Row>
-    </Col>
+    </>
   );
 };
 

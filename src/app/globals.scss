@@ -46,6 +46,7 @@ body {
   width: 100%;
   z-index: 99999;
   position: absolute;
+  margin-top: 150px;
 }
 
 .custom-navbar {
@@ -218,6 +219,7 @@ body {
   :root {
     margin: 0;
   }
+
   .avatar {
     width: 50%;
     // margin-block: 10px;
