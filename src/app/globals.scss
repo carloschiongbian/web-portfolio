@@ -1,11 +1,11 @@
-/**
-name = 50px
-section headers = 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-*/
+body {
+  height: 100vh;
+}
 
 :root {
-  margin-inline: 20%;
+  margin-inline: 18%;
 }
 
 :where(.css-dev-only-do-not-override-f7vrd6).ant-menu::before {
@@ -36,27 +36,15 @@ section headers =
 .navbar-container {
   z-index: 99999;
   position: fixed;
+  text-align: center;
 }
-
-// .footer-container {
-//   padding-block: 40px;
-//   background-color: black;
-//   left: 0;
-//   // bottom: 0;
-//   width: 100%;
-
-//   // margin-block: auto;
-//   z-index: 99999;
-//   position: absolute;
-// }
 
 .footer-container {
   padding-block: 40px;
   background-color: black;
-  margin-top: 100px;
   left: 0;
-  // bottom: 0;
   width: 100%;
+  z-index: 99999;
   position: absolute;
 }
 
@@ -67,22 +55,18 @@ section headers =
   position: fixed;
   background-color: #543310;
   padding-block: 20px !important;
-  display: flex;
-  align-items: center;
-  padding-inline: 21%;
   column-gap: 100px;
-  justify-content: flex-start;
   width: 100%;
 }
 
 .switch-container {
-  z-index: 99999;
+  z-index: 9999;
   position: fixed;
   width: 25%;
 }
 
 .custom-switch {
-  margin-left: 1%;
+  margin-left: 2%;
   left: 0;
   top: 0;
   padding-top: 250px;
@@ -120,7 +104,6 @@ section headers =
 
 :root::-webkit-scrollbar {
   display: none;
-  /* Hide scrollbar */
 }
 
 .ant-timeline-item-content,
@@ -157,13 +140,13 @@ section headers =
 
 .avatar {
   width: 50%;
-  margin-block: 10pxl;
+  // margin-block: 10px;
   align-items: center;
   justify-content: flex-end;
 
-  & > * {
-    border: 2px solid #543310;
-  }
+  // & > * {
+  //   border: 2px solid #543310;
+  // }
 }
 
 .links-container {
@@ -179,12 +162,20 @@ section headers =
   font-size: 50px !important;
 }
 
-.location {
-  font-size: 18px;
-  font-weight: 600 !important;
+.avatar-web {
+  border: 2px solid #543310;
+}
+.container-2 {
+  .location {
+    font-size: 18px;
+    border: none !important;
+    outline: none !important;
+    font-weight: 600 !important;
+  }
 }
 
 .sub-header {
+  justify-content: center;
   text-align: justify;
 
   .sub-header-content {
@@ -194,4 +185,77 @@ section headers =
 
 .project-image {
   border-radius: 10px;
+}
+
+.avatar-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 460px) {
+  .avatar-mobile {
+    margin-block: 20px;
+    display: inline-block;
+
+    border: 2px solid #543310;
+  }
+  .avatar-web {
+    display: none;
+  }
+  .avatar-pic-mobile {
+    height: 100px;
+    width: 100px;
+  }
+  .avatar-pic {
+    display: none;
+  }
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 1412px) {
+  :root {
+    margin: 0;
+  }
+  .avatar {
+    width: 50%;
+    // margin-block: 10px;
+    margin-top: 20px;
+    align-items: center;
+    // justify-content: center;
+
+    & > * {
+      border: 2px solid #543310;
+    }
+  }
+
+  .sub-header {
+    justify-content: center;
+    text-align: justify;
+
+    .sub-header-content {
+      font-size: 18px;
+    }
+  }
+
+  .developer-name {
+    font-size: 3rem;
+  }
+
+  .footer-container {
+    margin-top: 100px;
+  }
+
+  .container-2 {
+    outline: none;
+    border: none;
+  }
+
+  .switch-container {
+    display: none;
+  }
+  .custom-switch {
+    display: none;
+  }
 }
