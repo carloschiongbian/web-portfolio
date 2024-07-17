@@ -15,7 +15,7 @@ export const PROJECT_DATA: any = {
     ],
     thumbnailPath: "/portfolio-thumbnail.png",
     content:
-      "This is a website that I build from scratch with the aim to \
+      "This is a website that I built from scratch with the aim to \
     showcase my skills through the projects that I have started for fun, and projects\
     that I contributed to in my professional experience.",
     link: "https://web-portfolio-2sjckcwm0-carloschiongbians-projects.vercel.app/pages/home",

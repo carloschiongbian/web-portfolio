@@ -49,7 +49,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Health Management System for Pregnant Women",
+    title: "MLink: Health Management System",
     thumbnailPath: "/mlink-logo.png",
     link: "../../pages/projects/",
     technologies: [

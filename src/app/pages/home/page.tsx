@@ -1,7 +1,21 @@
 "use client";
 
-import { LinkedinOutlined, MailOutlined } from "@ant-design/icons";
-import { Avatar, Col, Divider, Row, Switch, Timeline, Typography } from "antd";
+import {
+  LinkedinOutlined,
+  MenuUnfoldOutlined,
+  MenuFoldOutlined,
+} from "@ant-design/icons";
+import {
+  Avatar,
+  Button,
+  Col,
+  Divider,
+  Menu,
+  Row,
+  Switch,
+  Timeline,
+  Typography,
+} from "antd";
 import { useState } from "react";
 import Image from "next/image";
 import EducationTabs from "@/app/components/EducationTabs";
@@ -65,19 +79,27 @@ const Home = () => {
       </div>
 
       {/* Header */}
-      <Row style={{ width: "100%", marginTop: "110px" }} wrap={false}>
+      {/* Header Content */}
+      <Title className="developer-name">Julian Chiongbian</Title>
+      <Title level={3}>Software Engineer</Title>
+      <Row style={{ width: "100%" }} className="header-container">
         <Col
           style={{
-            width: "50%",
+            // width: "50%",
             textAlign: "left",
           }}
         >
-          {/* Header Content */}
-          <Title className="developer-name">Julian Chiongbian</Title>
-          <Title level={3}>Software Engineer</Title>
-
           {/* Sub-Header Content */}
           <Row className="sub-header">
+            <Avatar className="avatar-mobile" size={100}>
+              <Image
+                src={"/avatar-photo.jpeg"}
+                className="avatar-pic-mobile"
+                alt="avatar-pic-mobile"
+                width={100}
+                height={100}
+              />
+            </Avatar>
             <Text className="sub-header-content">
               A software engineer with 3 years of creating interactive software
               in the frontend, backend, and database side of things 🎉 Helping
@@ -86,14 +108,17 @@ const Home = () => {
               people move forward one code at a time.
             </Text>
           </Row>
-
-          <Row style={{ marginTop: "15px" }} wrap={false}>
-            <Text className="location">📍 Cebu, Philippines</Text>
-          </Row>
         </Col>
 
-        <Row className="avatar" wrap={false}>
-          <Avatar size={150}>
+        <Row
+          className="avatar"
+          style={{ width: "100%", justifyContent: "space-between" }}
+          wrap={false}
+        >
+          <Row className="container-2" wrap={false}>
+            <Text className="location">📍 Cebu, Philippines</Text>
+          </Row>
+          <Avatar className="avatar-web" size={150}>
             <Image
               src={"/avatar-photo.jpeg"}
               className="avatar-pic"
@@ -110,7 +135,6 @@ const Home = () => {
           <LinkedinOutlined
             onClick={() => window?.open(linkedInLink, "_blank")?.focus()}
           />
-          <MailOutlined />
         </Row>
       </Col>
 
