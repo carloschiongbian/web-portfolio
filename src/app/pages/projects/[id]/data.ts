@@ -63,13 +63,13 @@ developing my frontend development skills. I played around with JavaScript, DOM 
     content:
       "This project was born out of curiosity, and my desire to grow and experiment with more technologies. \
       I have always wanted to try making some online web chat application, so I created one for myself and some friends. \
-      For this project, I made use of Firebase from Google for real-time snapshots of the database, which would help deliver \
-      real-time chatting between different clients simultaneously.",
+      For this project, I made use of Google API for the Signing In, and Firebase from Google for real-time snapshots of the database, which would help deliver \
+      real-time chatting between different clients.",
     link: null,
     repository: "https://github.com/carloschiongbian/chat-web-app",
   },
   4: {
-    title: "Health Management System for Pregnant Women",
+    title: "MLink: Health Management System",
     video: null,
     thumbnailPath: "/mlink-photo.png",
     technologies: [
