@@ -105,13 +105,13 @@ const Home = () => {
             Software Engineer
           </Title>
         </Col>
-        <Avatar className="avatar-web" size={140}>
+        <Avatar className="avatar-web" size={150}>
           <Image
             src={"/avatar-photo.jpg"}
             className="avatar-pic"
             alt="avatar-pic"
-            width={300}
-            height={300}
+            width={400}
+            height={550}
             unoptimized={true}
           />
         </Avatar>

@@ -2,7 +2,7 @@
 
 import { Button, Col, Menu, Row } from "antd";
 import Title from "antd/es/typography/Title";
-import { SendOutlined } from "@ant-design/icons";
+import { SendOutlined, MailOutlined } from "@ant-design/icons";
 import "../../app/globals.scss";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -45,13 +45,13 @@ export default function MainLayout({
         <Col style={{ marginTop: "100px" }}>{children}</Col>
       </div>
 
-      <footer id="footer-container">
+      <footer id="footer-container" style={{ textAlign: "center" }}>
         <Row>
           <Col>
             <Title style={{ color: "white" }} level={2}>
               Want to work with me?
             </Title>
-            <Row style={{ justifyContent: "center" }}>
+            <Row style={{ justifyContent: "center", columnGap: "10px" }}>
               <Button
                 size="large"
                 style={{
@@ -62,7 +62,7 @@ export default function MainLayout({
                   fontWeight: "500",
                 }}
                 iconPosition="end"
-                icon={<SendOutlined />}
+                icon={<SendOutlined style={{ fontSize: "20px" }} />}
                 onClick={() =>
                   window
                     ?.open(
@@ -73,6 +73,25 @@ export default function MainLayout({
                 }
               >
                 DM me on LinkedIn
+              </Button>
+              <Button
+                size="large"
+                style={{
+                  backgroundColor: "#543310",
+                  color: "white",
+                  outline: "none",
+                  border: "none",
+                  fontWeight: "500",
+                }}
+                iconPosition="end"
+                icon={<MailOutlined style={{ fontSize: "20px" }} />}
+                onClick={() =>
+                  window
+                    ?.open("mailto:carlosjulian.chiongbian@gmail.com", "#")
+                    ?.focus()
+                }
+              >
+                Send me an email
               </Button>
             </Row>
           </Col>
