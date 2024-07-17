@@ -124,7 +124,7 @@ const Projects = () => {
           style={{
             width: "100%",
             marginTop: "20px",
-            // textIndent: "50px",
+            textIndent: "50px",
             textAlign: "justify",
             fontSize: "16px",
           }}
