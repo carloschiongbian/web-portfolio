@@ -43,8 +43,9 @@ export const PROJECT_DATA: any = {
       blood pressure, weight, glucose levels, daily calorie intakes, and many more.\
       I was able to handle the development of features with little-to-no supervision, and \
       although I leaned more towards frontend development, I found that I would be able to provide more value by working on the full stack. \
+      I'm unable to share the repo, or the dedicated web application for privacy concerns, but, although still in early access,\
       The mobile app may be viewed in the app store and play store for iOS and Android, respectively. \
-       I was also responsible in creating iOS and Android builds, as well as deploying the website for testing and publishing purposes",
+       I was also responsible in creating iOS and Android builds, as well as deploying the website for testing and publishing purposes.",
     link: null,
     website: [],
     repository: null,
