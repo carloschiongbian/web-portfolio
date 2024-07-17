@@ -51,7 +51,13 @@ export default function MainLayout({
             <Title style={{ color: "white" }} level={2}>
               Want to work with me?
             </Title>
-            <Row style={{ justifyContent: "center", columnGap: "10px" }}>
+            <Row
+              style={{
+                justifyContent: "center",
+                columnGap: "10px",
+                rowGap: "10px",
+              }}
+            >
               <Button
                 size="large"
                 style={{
