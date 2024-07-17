@@ -126,11 +126,11 @@ const Home = () => {
           <Row className="sub-header">
             <Avatar className="avatar-mobile" size={150}>
               <Image
-                src={"/avatar-photo.jpg"}
+                src={"/avatar-photo-mobile.png"}
                 className="avatar-pic-mobile"
                 alt="avatar-pic-mobile"
-                width={100}
-                height={100}
+                width={155}
+                height={150}
               />
             </Avatar>
             <Text className="sub-header-content">
