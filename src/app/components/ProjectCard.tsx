@@ -29,9 +29,7 @@ const ProjectCard = ({ projects }: Props) => {
             hoverable
             style={{ width: "300px", height: "300px" }}
             onClick={() => {
-              route.push(
-                project.link ? `../../pages/projects/${project.id}` : "#"
-              );
+              route.push(`../../pages/projects/${project.id}`);
             }}
           >
             <div className="project-thumbnail">
