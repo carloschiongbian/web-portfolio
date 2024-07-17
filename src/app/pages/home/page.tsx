@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  LinkedinOutlined,
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
-} from "@ant-design/icons";
+import { LinkedinOutlined, MailOutlined } from "@ant-design/icons";
 import {
   Avatar,
   Button,
@@ -101,9 +97,30 @@ const Home = () => {
           <Title className="developer-name" style={{ margin: 0 }}>
             Julian Chiongbian
           </Title>
-          <Title level={3} style={{ margin: 0 }}>
-            Software Engineer
-          </Title>
+          <Row style={{ columnGap: "10px" }}>
+            <Title level={3} style={{ margin: 0 }}>
+              Software Engineer
+            </Title>
+            <LinkedinOutlined
+              style={{ fontSize: "30px" }}
+              onClick={() =>
+                window
+                  ?.open(
+                    "https://www.linkedin.com/in/julianchiongbian",
+                    "_blank"
+                  )
+                  ?.focus()
+              }
+            />
+            <MailOutlined
+              style={{ fontSize: "30px" }}
+              onClick={() =>
+                window
+                  ?.open("mailto:carlosjulian.chiongbian@gmail.com", "#")
+                  ?.focus()
+              }
+            />
+          </Row>
         </Col>
         <Avatar className="avatar-web" size={150}>
           <Image
