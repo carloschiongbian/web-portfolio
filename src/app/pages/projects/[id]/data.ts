@@ -22,28 +22,32 @@ export const PROJECT_DATA: any = {
     repository: "https://github.com/carloschiongbian/web-portfolio",
   },
   2: {
-    title: "Tip Splitting Calculator",
+    title: "MLink: Health Management System",
     video: null,
-    website: [],
+    thumbnailPath: "/mlink-photo.png",
     technologies: [
-      "JavaScript",
-      "DOM Manipulation",
+      "TypeScript",
+      "React Native",
+      "React",
+      "AdonisJS",
+      "Hasura",
+      "GraphQL",
+      "AntD",
+      "UI Kitten",
       "SCSS",
-      "Node",
       "HTML",
-      "Vite",
-      "Netlify",
     ],
-    thumbnailPath: "/splitter-page-pic.png",
     content:
-      "This little project was something that I created a while back for \
-fun while going through college.  It's called 'Splitter', and it \
-calculates the tip to give based on the number of people \
-contributing to the amount, the desired percentage, and the original \
-amount to be given. I started this as part of my practice in \
-developing my frontend development skills. I played around with JavaScript, DOM Manipulation, HTML, and SCSS.",
-    link: "https://admiring-lovelace-e296ae.netlify.app/",
-    repository: "https://github.com/carloschiongbian/splitter-react",
+      "This was a project where I was the only one involved in both the development for the web application, and the mobile application. \
+      It serves as a medium between patients and doctors, and it sends vital data regarding a pregnant patient's health such as \
+      blood pressure, weight, glucose levels, daily calorie intakes, and many more.\
+      I was able to handle the development of features with little-to-no supervision, and \
+      although I leaned more towards frontend development, I found that I would be able to provide more value by working on the full stack. \
+      The mobile app may be viewed in the app store and play store for iOS and Android, respectively. \
+       I was also responsible in creating iOS and Android builds, as well as deploying the website for testing and publishing purposes",
+    link: null,
+    website: [],
+    repository: null,
   },
   3: {
     title: "Chat Web App",
@@ -69,30 +73,27 @@ developing my frontend development skills. I played around with JavaScript, DOM 
     repository: "https://github.com/carloschiongbian/chat-web-app",
   },
   4: {
-    title: "MLink: Health Management System",
+    title: "Tip Splitting Calculator",
     video: null,
-    thumbnailPath: "/mlink-photo.png",
-    technologies: [
-      "TypeScript",
-      "React Native",
-      "React",
-      "AdonisJS",
-      "Hasura",
-      "GraphQL",
-      "AntD",
-      "UI Kitten",
-      "SCSS",
-      "HTML",
-    ],
-    content:
-      "This was a project where I was the only one involved in both the development for the web application, and the mobile application. \
-      It basically serves as a medium between patients and doctors, and it sends vital data regarding a pregnant patient's health data such as \
-      blood pressure, weight, glucose levels, and daily calorie intakes. \
-      I was able to handle the development of features with little-to-no supervision even though I was onboarded late into the project.\
-      Although I leaned more towards frontend development, I found that I would be able to provide more value by working on the full stack. \
-      The mobile app may be viewed in the app store and play store for iOS and Android, respectively.",
-    link: null,
     website: [],
-    repository: null,
+    technologies: [
+      "JavaScript",
+      "DOM Manipulation",
+      "SCSS",
+      "Node",
+      "HTML",
+      "Vite",
+      "Netlify",
+    ],
+    thumbnailPath: "/splitter-page-pic.png",
+    content:
+      "This little project was something that I created a while back for \
+fun while going through college.  It's called 'Splitter', and it \
+calculates the tip to give based on the number of people \
+contributing to the amount, the desired percentage, and the original \
+amount to be given. I started this as part of my practice in \
+developing my frontend development skills. I played around with JavaScript, DOM Manipulation, HTML, and SCSS.",
+    link: "https://admiring-lovelace-e296ae.netlify.app/",
+    repository: "https://github.com/carloschiongbian/splitter-react",
   },
 };
