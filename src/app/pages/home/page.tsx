@@ -105,20 +105,20 @@ const Home = () => {
             Software Engineer
           </Title>
         </Col>
-        <Avatar className="avatar-web" size={150}>
+        <Avatar className="avatar-web" size={140}>
           <Image
-            src={"/avatar-photo.jpeg"}
+            src={"/avatar-photo.jpg"}
             className="avatar-pic"
             alt="avatar-pic"
-            width={150}
-            height={150}
+            width={300}
+            height={300}
+            unoptimized={true}
           />
         </Avatar>
       </Row>
       <Row style={{ width: "100%" }} className="header-container">
         <Col
           style={{
-            // width: "50%",
             textAlign: "left",
           }}
         >
@@ -126,7 +126,7 @@ const Home = () => {
           <Row className="sub-header">
             <Avatar className="avatar-mobile" size={150}>
               <Image
-                src={"/avatar-photo.jpeg"}
+                src={"/avatar-photo.jpg"}
                 className="avatar-pic-mobile"
                 alt="avatar-pic-mobile"
                 width={100}
@@ -143,9 +143,14 @@ const Home = () => {
           </Row>
         </Col>
 
-        <Row className="container-2" style={{ marginTop: "20px" }} wrap={false}>
+        <Col
+          className="container-2"
+          style={{
+            marginTop: "20px",
+          }}
+        >
           <Text className="location">📍 Cebu, Philippines</Text>
-        </Row>
+        </Col>
       </Row>
       {/* <Col className="contacts-container">
         <Text className="contact">Connect with me</Text>
