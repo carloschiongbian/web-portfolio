@@ -1,12 +1,8 @@
 "use client";
 
-import { Button, Col, Menu } from "antd";
+import { Button, Col, Menu, Row } from "antd";
 import Title from "antd/es/typography/Title";
-import {
-  LinkedinOutlined,
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
-} from "@ant-design/icons";
+import { SendOutlined } from "@ant-design/icons";
 import "../../app/globals.scss";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -49,8 +45,38 @@ export default function MainLayout({
         <Col style={{ marginTop: "100px" }}>{children}</Col>
       </div>
 
-      <footer className="footer-container">
-        <Title>footer</Title>
+      <footer id="footer-container">
+        <Row>
+          <Col>
+            <Title style={{ color: "white" }} level={2}>
+              Want to work with me?
+            </Title>
+            <Row style={{ justifyContent: "center" }}>
+              <Button
+                size="large"
+                style={{
+                  backgroundColor: "#543310",
+                  color: "white",
+                  outline: "none",
+                  border: "none",
+                  fontWeight: "500",
+                }}
+                iconPosition="end"
+                icon={<SendOutlined />}
+                onClick={() =>
+                  window
+                    ?.open(
+                      "https://www.linkedin.com/in/julianchiongbian",
+                      "_blank"
+                    )
+                    ?.focus()
+                }
+              >
+                DM me on LinkedIn
+              </Button>
+            </Row>
+          </Col>
+        </Row>
       </footer>
     </>
   );

@@ -16,7 +16,7 @@ import {
   Timeline,
   Typography,
 } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import EducationTabs from "@/app/components/EducationTabs";
 import ProjectCard from "@/app/components/ProjectCard";
@@ -53,9 +53,18 @@ const Home = () => {
     },
   ];
 
+  useEffect(() => {
+    if (!showEducation && !showExperience && !showProjects) {
+      const div = document?.getElementById("footer-container");
+      if (div) {
+        div.style.marginTop = "250px";
+      }
+    }
+  }, [showEducation, showExperience, showProjects]);
+
   return (
     <>
-      <div className="switch-container">
+      {/* <div className="switch-container">
         <Row className="custom-switch">
           {switchItems.map((item: any, index: number) => (
             <Row
@@ -76,12 +85,35 @@ const Home = () => {
             </Row>
           ))}
         </Row>
-      </div>
+      </div> */}
 
       {/* Header */}
       {/* Header Content */}
-      <Title className="developer-name">Julian Chiongbian</Title>
-      <Title level={3}>Software Engineer</Title>
+      <Row
+        style={{
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "20px",
+        }}
+      >
+        <Col>
+          <Title className="developer-name" style={{ margin: 0 }}>
+            Julian Chiongbian
+          </Title>
+          <Title level={3} style={{ margin: 0 }}>
+            Software Engineer
+          </Title>
+        </Col>
+        <Avatar className="avatar-web" size={150}>
+          <Image
+            src={"/avatar-photo.jpeg"}
+            className="avatar-pic"
+            alt="avatar-pic"
+            width={150}
+            height={150}
+          />
+        </Avatar>
+      </Row>
       <Row style={{ width: "100%" }} className="header-container">
         <Col
           style={{
@@ -110,33 +142,18 @@ const Home = () => {
           </Row>
         </Col>
 
-        <Row
-          className="avatar"
-          style={{ width: "100%", justifyContent: "space-between" }}
-          wrap={false}
-        >
-          <Row className="container-2" wrap={false}>
-            <Text className="location">📍 Cebu, Philippines</Text>
-          </Row>
-          <Avatar className="avatar-web" size={150}>
-            <Image
-              src={"/avatar-photo.jpeg"}
-              className="avatar-pic"
-              alt="avatar-pic"
-              width={150}
-              height={150}
-            />
-          </Avatar>
+        <Row className="container-2" style={{ marginTop: "20px" }} wrap={false}>
+          <Text className="location">📍 Cebu, Philippines</Text>
         </Row>
       </Row>
-      <Col className="contacts-container">
+      {/* <Col className="contacts-container">
         <Text className="contact">Connect with me</Text>
         <Row className="links-container" wrap={false}>
           <LinkedinOutlined
             onClick={() => window?.open(linkedInLink, "_blank")?.focus()}
           />
         </Row>
-      </Col>
+      </Col> */}
 
       {/* Projects */}
       {showProjects && (
