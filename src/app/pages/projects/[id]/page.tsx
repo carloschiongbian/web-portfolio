@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Carousel, Col, Row, Typography } from "antd";
+import { Button, Carousel, Col, Row, Skeleton, Spin, Typography } from "antd";
 import { useParams } from "next/navigation";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -33,12 +33,12 @@ const Projects = () => {
   useEffect(() => {
     const response = PROJECT_DATA[`${projectId}`];
 
-    setData(response);
+    setData(response ?? null);
     setDemoLink(response ? response.link : undefined);
     setRepositoryLink(response ? response.repository : undefined);
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
   return (
     <Col>
       <Title level={1}>{data?.title}</Title>
@@ -62,12 +62,13 @@ const Projects = () => {
               width={1200}
               height={450}
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              unoptimized={true}
             />
           </div>
           <div>
             <video width="100%" height="100%" controls preload="none">
-              <source src={"/web-chat-demo.mov"} type="video/mp4" />
-              <track src={"/web-chat-demo.mov"} srcLang="en" label="English" />
+              <source src={data?.video} type="video/mp4" />
+              <track src={data?.video} srcLang="en" label="English" />
               Your browser does not support the video tag.
             </video>
           </div>

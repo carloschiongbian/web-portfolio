@@ -29,8 +29,6 @@ const ProjectCard = ({ projects }: Props) => {
             hoverable
             style={{ width: "300px", height: "300px" }}
             onClick={() => {
-              console.log(project.id);
-              console.log(project.link);
               route.push(project.link ? `${project.link}/${project.id}` : "#");
             }}
           >

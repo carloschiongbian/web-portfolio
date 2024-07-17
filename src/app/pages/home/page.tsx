@@ -63,6 +63,7 @@ const Home = () => {
           ))}
         </Row>
       </div>
+
       {/* Header */}
       <Row style={{ width: "100%", marginTop: "110px" }} wrap={false}>
         <Col

@@ -2,6 +2,7 @@ export const PROJECT_DATA: any = {
   1: {
     title: "Web Portfolio",
     video: null,
+    website: [],
     technologies: [
       "TypeScript",
       "Tailwind",
@@ -23,6 +24,7 @@ export const PROJECT_DATA: any = {
   2: {
     title: "Tip Splitting Calculator",
     video: null,
+    website: [],
     technologies: [
       "JavaScript",
       "DOM Manipulation",
@@ -46,6 +48,7 @@ developing my frontend development skills. I played around with JavaScript, DOM 
   3: {
     title: "Chat Web App",
     video: "/web-chat-demo.mov",
+    website: [],
     technologies: [
       "TypeScript",
       "React",
@@ -68,7 +71,7 @@ developing my frontend development skills. I played around with JavaScript, DOM 
   4: {
     title: "Health Management System for Pregnant Women",
     video: null,
-    thumbnailPath: "",
+    thumbnailPath: "/mlink-photo.png",
     technologies: [
       "TypeScript",
       "React Native",
@@ -82,11 +85,14 @@ developing my frontend development skills. I played around with JavaScript, DOM 
       "HTML",
     ],
     content:
-      "This project was born out of curiosity, and my desire to grow and experiment with more technologies. \
-      I have always wanted to try making some online web chat application, so I created one for myself and some friends. \
-      For this project, I made use of Firebase from Google for real-time snapshots of the database, which would help deliver \
-      real-time chatting between different clients simultaneously.",
+      "This was a project where I was the only one involved in both the development for the web application, and the mobile application. \
+      It basically serves as a medium between patients and doctors, and it sends vital data regarding a pregnant patient's health data such as \
+      blood pressure, weight, glucose levels, and daily calorie intakes. \
+      I was able to handle the development of features with little-to-no supervision even though I was onboarded late into the project.\
+      Although I leaned more towards frontend development, I found that I would be able to provide more value by working on the full stack. \
+      The mobile app may be viewed in the app store and play store for iOS and Android, respectively.",
     link: null,
+    website: [],
     repository: null,
   },
 };

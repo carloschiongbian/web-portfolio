@@ -38,6 +38,18 @@ section headers =
   position: fixed;
 }
 
+// .footer-container {
+//   padding-block: 40px;
+//   background-color: black;
+//   left: 0;
+//   // bottom: 0;
+//   width: 100%;
+
+//   // margin-block: auto;
+//   z-index: 99999;
+//   position: absolute;
+// }
+
 .footer-container {
   padding-block: 40px;
   background-color: black;
@@ -70,13 +82,13 @@ section headers =
 }
 
 .custom-switch {
-  margin-left: 50px;
+  margin-left: 1%;
   left: 0;
   top: 0;
   padding-top: 250px;
   z-index: 99999;
   position: fixed;
-  row-gap: 40px;
+  row-gap: 5%;
   display: flex;
   flex-direction: column;
   height: 100%;

@@ -50,7 +50,7 @@ export const projects = [
   {
     id: 4,
     title: "Health Management System for Pregnant Women",
-    thumbnailPath: "",
+    thumbnailPath: "/mlink-logo.png",
     link: "../../pages/projects/",
     technologies: [
       "TypeScript",
