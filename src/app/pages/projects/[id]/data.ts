@@ -45,7 +45,8 @@ export const PROJECT_DATA: any = {
       although I leaned more towards frontend development, I found that I would be able to provide more value by working on the full stack. \
       I'm unable to share the repo, or the dedicated web application for privacy concerns, but, although still in early access,\
       the mobile app may be viewed in the app store and play store for iOS and Android, respectively. \
-       I was also responsible in creating iOS and Android builds, as well as deploying the website for testing and publishing purposes.",
+       I was also responsible in creating iOS and Android builds, as well as deploying the website for testing and publishing purposes.\
+       The repository is stored in a company GitLab account, so unfortunately, I can't share that.",
     link: null,
     website: [],
     repository: null,
