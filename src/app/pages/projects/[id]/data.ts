@@ -18,7 +18,7 @@ export const PROJECT_DATA: any = {
       "This is a website that I built from scratch with the aim to \
     showcase my skills through the projects that I have started for fun, and projects\
     that I contributed to in my professional experience.",
-    link: "https://web-portfolio-2sjckcwm0-carloschiongbians-projects.vercel.app/pages/home",
+    link: "https://web-portfolio-fmyh3ry9k-carloschiongbians-projects.vercel.app/pages/home",
     repository: "https://github.com/carloschiongbian/web-portfolio",
   },
   2: {
