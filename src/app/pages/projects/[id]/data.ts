@@ -52,6 +52,32 @@ export const PROJECT_DATA: any = {
     repository: null,
   },
   3: {
+    title: "KRSION: Order Management System",
+    video: null,
+    thumbnailPath: "/krsion.png",
+    technologies: [
+      "TypeScript",
+      "React",
+      "Prisma",
+      "GraphQL",
+      "AntD",
+      "Next.js",
+      "SCSS",
+      "HTML",
+    ],
+    content:
+      "This is a project for a Japanese client where we were tasked to create an order management system for leasing vehicles in Japan.   \
+      It has different features such as employee management, vehicles and orders management, and more.   \
+      I was able to further develop my learnings and skills with React as it produced unique challenges compared to previous project;   \
+      And not just my usage of React was developed, but my skills in writing cleaner code were tested too as it was needed for reusability and scale.   \
+      I was involved in the full-stack development.   \
+      I'm unable to share the repo, or the dedicated web application for privacy concerns \
+       The repository is stored in a company GitLab account, so unfortunately, I can't share that.",
+    link: null,
+    website: [],
+    repository: null,
+  },
+  4: {
     title: "Chat Web App",
     video: "/web-chat-demo.mov",
     website: [],
@@ -74,7 +100,7 @@ export const PROJECT_DATA: any = {
     link: null,
     repository: "https://github.com/carloschiongbian/chat-web-app",
   },
-  4: {
+  5: {
     title: "Tip Splitting Calculator",
     video: null,
     website: [],

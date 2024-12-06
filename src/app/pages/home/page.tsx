@@ -151,11 +151,11 @@ const Home = () => {
               />
             </Avatar>
             <Text className="sub-header-content">
-              A software engineer with 3 years of creating interactive software
-              in the frontend, backend, and database side of things 🎉 Solving
-              coding issues and seeing my solutions work through helping people
-              with their software needs is a job that I actually enjoy. I have
-              prepared myself for a path of lifelong learning, and helping
+              A software engineer with more than 3 years of creating interactive
+              software in the frontend, backend, and database side of things 🎉
+              Solving coding issues and seeing my solutions work through helping
+              people with their software needs is a job that I actually enjoy. I
+              have prepared myself for a path of lifelong learning, and helping
               others move forward one code at a time!
             </Text>
           </Row>
