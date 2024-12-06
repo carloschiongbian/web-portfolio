@@ -68,7 +68,7 @@ export const PROJECT_DATA: any = {
     content:
       "This is a project for a Japanese client where we were tasked to create an order management system for leasing vehicles in Japan.   \
       It has different features such as employee management, vehicles and orders management, and more.   \
-      I was able to further develop my learnings and skills with React as it produced unique challenges compared to previous project;   \
+      I was able to further develop my learnings and skills with React as it produced its own unique set of challenges compared to previous projects;   \
       And not just my usage of React was developed, but my skills in writing cleaner code were tested too as it was needed for reusability and scale.   \
       I was involved in the full-stack development.   \
       I'm unable to share the repo, or the dedicated web application for privacy concerns \
