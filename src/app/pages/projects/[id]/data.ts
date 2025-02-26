@@ -67,7 +67,6 @@ export const PROJECT_DATA: any = {
       This involved multiple screens, creation of components from scratch, adjusting existing components to make them re-usable, and of course, the 
       implementation of the respective API endpoints into the frontend. \n
       For this project, I was 90% on the frontend development, with 10% on the backend for minor modifications as there was a dedicated backend developer.
-      I'm unable to share the repo as well since 
       The repository is stored in a company bitbucket account, so unfortunately, I can't share that.`,
     link: "https://knowyourtrade.com.au/home",
     website: [],
