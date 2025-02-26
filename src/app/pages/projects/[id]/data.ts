@@ -52,7 +52,7 @@ export const PROJECT_DATA: any = {
     repository: null,
   },
   3: {
-    title: "Construction Networking System (Know Your Trade)",
+    title: "Construction Networking System (knowyourtrade)",
     video: null,
     thumbnailPath: "/kyt.png",
     technologies: ["TypeScript", "React", "AntD", "Next.js", "SCSS", "HTML"],
@@ -67,8 +67,8 @@ export const PROJECT_DATA: any = {
       This involved multiple screens, creation of components from scratch, adjusting existing components to make them re-usable, and of course, the 
       implementation of the respective API endpoints into the frontend. \n
       For this project, I was 90% on the frontend development, with 10% on the backend for minor modifications as there was a dedicated backend developer.
-      The repository is stored in a company bitbucket account, so unfortunately, I can't share that.`,
-    link: "https://knowyourtrade.com.au/home",
+      The repository is stored in a company account, so unfortunately, I can't share that.`,
+    link: null,
     website: [],
     repository: null,
   },
