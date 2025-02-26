@@ -16,7 +16,7 @@ interface Props {
   projects: Project[];
 }
 
-const ProjectCard = ({ projects }: Props) => {
+const ProjectsSection = ({ projects }: Props) => {
   const route = useRouter();
 
   return (
@@ -34,7 +34,11 @@ const ProjectCard = ({ projects }: Props) => {
           >
             <div className="project-thumbnail">
               <Image
-                src={project.thumbnailPath}
+                src={
+                  !!project.thumbnailPath.length
+                    ? project.thumbnailPath
+                    : "/no-project-image.png"
+                }
                 className="thumbnail-pic"
                 alt="project-pic"
                 width={150}
@@ -43,7 +47,7 @@ const ProjectCard = ({ projects }: Props) => {
               />
             </div>
           </Card>
-          <Title style={{ marginTop: 10 }} level={4}>
+          <Title style={{ marginTop: 10, verticalAlign: "text-top" }} level={4}>
             {project.title}
           </Title>
 
@@ -54,4 +58,4 @@ const ProjectCard = ({ projects }: Props) => {
   );
 };
 
-export default ProjectCard;
+export default ProjectsSection;

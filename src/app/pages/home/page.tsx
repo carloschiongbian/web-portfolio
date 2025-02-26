@@ -1,21 +1,11 @@
 "use client";
 
 import { LinkedinOutlined, MailOutlined } from "@ant-design/icons";
-import {
-  Avatar,
-  Button,
-  Col,
-  Divider,
-  Menu,
-  Row,
-  Switch,
-  Timeline,
-  Typography,
-} from "antd";
+import { Avatar, Col, Divider, Row, Timeline, Typography } from "antd";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import EducationTabs from "@/app/components/EducationTabs";
-import ProjectCard from "@/app/components/ProjectCard";
+import ProjectsSection from "@/app/components/ProjectCard";
 import { experience, institutions, projects } from "./data";
 
 const { Title, Text } = Typography;
@@ -183,7 +173,7 @@ const Home = () => {
       {showProjects && (
         <Row>
           <Divider style={{ fontSize: "27px" }}>Projects</Divider>
-          <ProjectCard projects={projects} />
+          <ProjectsSection projects={projects} />
         </Row>
       )}
 

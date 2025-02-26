@@ -78,7 +78,11 @@ const Projects = () => {
       {data?.video === null && (
         <Image
           className="project-image"
-          src={data?.thumbnailPath}
+          src={
+            !!data?.thumbnailPath.length
+              ? data?.thumbnailPath
+              : "/no-project-image.png"
+          }
           alt="thumbnail"
           width={1200}
           height={450}
@@ -127,6 +131,7 @@ const Projects = () => {
             textIndent: "50px",
             textAlign: "justify",
             fontSize: "16px",
+            // whiteSpace: "pre-line",
           }}
         >
           {data?.content}

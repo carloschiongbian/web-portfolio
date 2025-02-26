@@ -15,7 +15,7 @@ export const PROJECT_DATA: any = {
     ],
     thumbnailPath: "/portfolio-thumbnail.png",
     content:
-      "This is a website that I built from scratch with the aim to \
+      "This is a static website that I built from scratch with the aim to \
     showcase my skills through the projects that I have started for fun, and projects\
     that I contributed to in my professional experience.",
     link: "https://julianchiongbian.vercel.app/",
@@ -52,6 +52,29 @@ export const PROJECT_DATA: any = {
     repository: null,
   },
   3: {
+    title: "Construction Networking System (Know Your Trade)",
+    video: null,
+    thumbnailPath: "/kyt.png",
+    technologies: ["TypeScript", "React", "AntD", "Next.js", "SCSS", "HTML"],
+    content: `
+      This is a project for an Australian client where we were tasked to create sort of social network for the construction industry in Australia.
+      It has different features such as constructor profile, constructor search, constructor networking, and more.   
+      This project further tested my skills as a developer as I was given more responsibility than my previous professional projects. \n
+      As I joined in the middle of the development of the system, I had to scan the source code in order to follow existing coding patterns and 
+      naming conventions in order to efficiently fit in the development process. I was deeply involved in code reviews as I wanted to learn more from colleagues. 
+      This helped my habit of continuous learning. I was also in charge of implementing the mobile design.\n
+      I was given a huge responsibility to create and implement all components for the networking feature of the website, from design to usable interface. 
+      This involved multiple screens, creation of components from scratch, adjusting existing components to make them re-usable, and of course, the 
+      implementation of the respective API endpoints into the frontend. \n
+      For this project, I was 90% on the frontend development, with 10% on the backend for minor modifications as there was a dedicated backend developer.
+      This system is still in its final phases of development and should launch sometime soon, but for now I cannot share it due to privacy concerns.
+      I'm unable to share the repo as well since 
+      The repository is stored in a company bitbucket account, so unfortunately, I can't share that.`,
+    link: "https://knowyourtrade.com.au/home",
+    website: [],
+    repository: null,
+  },
+  4: {
     title: "KRSION: Order Management System",
     video: null,
     thumbnailPath: "/krsion.png",
@@ -77,7 +100,7 @@ export const PROJECT_DATA: any = {
     website: [],
     repository: null,
   },
-  4: {
+  5: {
     title: "Chat Web App",
     video: "/web-chat-demo.mov",
     website: [],
@@ -100,7 +123,7 @@ export const PROJECT_DATA: any = {
     link: null,
     repository: "https://github.com/carloschiongbian/chat-web-app",
   },
-  5: {
+  6: {
     title: "Tip Splitting Calculator",
     video: null,
     website: [],

@@ -35,6 +35,13 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Construction Networking System",
+    thumbnailPath: "/kyt.png",
+    link: "../../pages/projects/",
+    technologies: ["TypeScript", "React", "AntD", "Next.js", "SCSS", "HTML"],
+  },
+  {
+    id: 4,
     title: "KRSION: Order Management System",
     thumbnailPath: "/krsion.png",
     link: "../../pages/projects/",
@@ -49,9 +56,8 @@ export const projects = [
       "HTML",
     ],
   },
-
   {
-    id: 4,
+    id: 5,
     title: "Chat Web App",
     thumbnailPath: "/web-chat-thumbnail.png",
     link: "../../pages/projects/",
@@ -68,7 +74,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Tip Splitting Calculator",
     thumbnailPath: "/splitter-thumbnail.png",
     link: "../../pages/projects/",
